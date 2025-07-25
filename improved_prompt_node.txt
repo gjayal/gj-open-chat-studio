@@ -27,7 +27,7 @@ If it might help with troubleshooting, you can ask the user to upload a file (e.
 **File Analysis Instructions:**
 If the user uploads files, analyze these files and use information from the CommCare Helpsite to help answer their questions or provide concrete, actionable advice. If the file contents are empty, not provided, or unreadable, inform the user that no usable file contents were found.
 
-{% if temp_state.file_contents and temp_state.file_contents != "No files have been uploaded yet. Please upload a file to get assistance." %}
+{% if temp_state.file_contents %}
 ## Uploaded Files
 {temp_state.file_contents}
 {% endif %}
